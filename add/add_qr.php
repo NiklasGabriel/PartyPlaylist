@@ -1,9 +1,13 @@
 <?php
+// User Season
 session_start();
 if(!isset($_SESSION['userid'])) {
     echo "<script>window.location.href='../login.php'</script>";
 }
 $username = $_SESSION['userid'];
+
+//Dafault Variables
+
 ?>
 <!DOCTYPE html>
 <html lang="de">

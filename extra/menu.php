@@ -20,17 +20,17 @@
         ?>
     
         <div id="menuPhone">
-            <a href="http://109.250.44.14/~Niklas/playlist/index.php">Home</a>
-            <a href="http://109.250.44.14/~Niklas/playlist/playlist.php">My Playlist</a>
-            <a href="http://109.250.44.14/~Niklas/playlist/login.php"><?php echo $locker;?></a>
+            <a href="http://109.250.44.14/~Niklas/partyplaylist/index.php">Home</a>
+            <a href="http://109.250.44.14/~Niklas/partyplaylist/playlist.php">My Playlist</a>
+            <a href="http://109.250.44.14/~Niklas/partyplaylist/login.php"><?php echo $locker;?></a>
         </div>
         <table id="menuPC">
             <tr>
                 <td id="menuPC_header"><h1>PPList</h1></td>
                 <td id="menuPC_links">
-                    <a href="http://nweb.freeddns.org/~Niklas/playlist/index.php">Home</a>
-                    <a href="http://nweb.freeddns.org/~Niklas/playlist/playlist.php">My Playlist</a>
-                    <a href="http://nweb.freeddns.org/~Niklas/playlist/login.php"><?php echo $locker;?></a>
+                    <a href="http://nweb.freeddns.org/~Niklas/partyplaylist/index.php">Home</a>
+                    <a href="http://nweb.freeddns.org/~Niklas/partyplaylist/playlist.php">My Playlist</a>
+                    <a href="http://nweb.freeddns.org/~Niklas/partyplaylist/login.php"><?php echo $locker;?></a>
                 </td>
             </tr>
         </table>

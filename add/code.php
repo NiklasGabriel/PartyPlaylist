@@ -29,6 +29,10 @@ if(isset($_GET['change'])) {
     echo "<script>window.location.href='../add_choose.php'</script>";
     
 }
+
+// Dafault Variables
+$errorMessage = "";
+
 ?>
 <!DOCTYPE html>
 <html lang="de">

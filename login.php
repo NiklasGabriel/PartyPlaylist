@@ -11,6 +11,9 @@ $db_name = 'db.db';
 $server = "sqlite:$db_name";
 $verbindung = new PDO($server);
 
+// Standart Vaiablen
+$errorMessage = "";
+
 if(isset($_GET['login'])) {
     $email = $_POST['email'];
     $passwort = $_POST['passwort'];

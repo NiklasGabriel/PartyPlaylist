@@ -10,6 +10,9 @@ $verbindung = new PDO($server);
 $db_name = 'playlist.db';
 $server = "sqlite:$db_name";
 $verbindung_playlist = new PDO($server);
+
+// Strandart Variablen
+$errorMessage = "";
 ?>
 <!DOCTYPE html>
 <html lang="de">

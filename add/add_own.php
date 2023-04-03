@@ -1,34 +1,40 @@
 <?php
+// User Season
 session_start();
 if(!isset($_SESSION['userid'])) {
     echo "<script>window.location.href='../login.php'</script>";
 }
 $username = $_SESSION['userid'];
+
+//Dafault Variables
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
 	<?php include("../extra/head.php");?>
 	<?php
-		$titel = $_POST['titel'];
-		$notitz = $_POST['notitz'];
+		if (isset($_POST['titel']) || isset($_POST['notitz'])) {
+			$titel = $_POST['titel'];
+			$notitz = $_POST['notitz'];
 
-		// Verbindung zur Datenbank
-		$db_name = '../playlist.db';
-		$server = "sqlite:$db_name";
-		$verbindung = new PDO($server);
+			// Verbindung zur Datenbank
+			$db_name = '../playlist.db';
+			$server = "sqlite:$db_name";
+			$verbindung = new PDO($server);
 
-		// Daten überprüfen
-		if ($titel == "" and $notitz == "") {
-			$message = "Text eintragen!";
-		} else {
-			// Daten eintragen
-			$verbindung->exec(
-			"INSERT INTO $username
-				(titel, notitz)
-			VALUES
-				('$titel', '$notitz')"
-			);
+			// Daten überprüfen
+			if ($titel == "" and $notitz == "") {
+				$message = "Text eintragen!";
+			} else {
+				// Daten eintragen
+				$verbindung->exec(
+				"INSERT INTO $username
+					(titel, notitz)
+				VALUES
+					('$titel', '$notitz')"
+				);
+			}
 		}
 	?>
 </head>

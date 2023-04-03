@@ -8,7 +8,7 @@ $username = $_SESSION['userid'];
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<?php include("head/head.php");?>
+	<?php include("extra/head.php");?>
 	<?php
 	
 	// Aus Eingabe abrufen
