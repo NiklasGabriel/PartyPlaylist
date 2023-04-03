@@ -1,9 +1,14 @@
 <?php 
+// User Season
 session_start();
 if(!isset($_SESSION['userid'])) {
     echo "<script>window.location.href='login.php'</script>";
 }
 $username = $_SESSION['userid'];
+
+// Dafault Variables
+$errorMessage = "";
+
 // Verbindung zur Datenbank
 $db_name = '../db.db';
 $server = "sqlite:$db_name";
@@ -29,10 +34,6 @@ if(isset($_GET['change'])) {
     echo "<script>window.location.href='../add_choose.php'</script>";
     
 }
-
-// Dafault Variables
-$errorMessage = "";
-
 ?>
 <!DOCTYPE html>
 <html lang="de">
